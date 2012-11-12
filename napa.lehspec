@@ -1,9 +1,9 @@
 
 
 (spec
-  (name "maali")
-  (description "colour your strings")
-  (homepage "http://github.com/mytoh/maali")
+  (name "napa")
+  (description "git helper")
+  (homepage "http://github.com/mytoh/napa")
   (files ("lib/napa.scm"
            "napa.lehspec"
            ))
