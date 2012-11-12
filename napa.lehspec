@@ -4,7 +4,8 @@
   (name "napa")
   (description "git helper")
   (homepage "http://github.com/mytoh/napa")
-  (files ("lib/napa.scm"
+  (files ("lib/napa.sls"
+          "lib/napa"
            "napa.lehspec"
            ))
   )
