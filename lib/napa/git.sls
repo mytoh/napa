@@ -4,11 +4,7 @@
     git
     directory-git?)
   (import
-    (scheme base)
-    (scheme write)
-    (only (rnrs)
-          transcoded-port make-transcoder
-          utf-8-codec)
+    (rnrs)
     (srfi :8 receive)
     (only (srfi :13 strings)
           string-trim-right

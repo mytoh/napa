@@ -9,7 +9,7 @@
     darcs
     )
   (import
-    (scheme base)
+    (rnrs)
     (napa git)
     (napa svn)
     (napa hg)
