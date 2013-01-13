@@ -4,7 +4,13 @@
     git
     directory-git?)
   (import
-    (rnrs)
+    (silta base)
+    (silta write)
+    (silta cxr)
+    (only (rnrs)
+          utf-8-codec
+          transcoded-port
+          make-transcoder)
     (srfi :8 receive)
     (only (srfi :13 strings)
           string-trim-right

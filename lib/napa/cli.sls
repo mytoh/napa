@@ -3,7 +3,9 @@
   (export
     runner)
   (import
-    (rnrs)
+    (silta base)
+    (silta write)
+    (silta file)
     (napa))
 
   (begin
