@@ -2,7 +2,7 @@
 (library (napa hg)
   (export hg)
   (import
-    (rnrs)
+    (silta base)
     (match)
     (only (srfi :13 strings)
           string-join)

@@ -2,7 +2,7 @@
 (library (napa svn)
   (export svn)
   (import
-    (rnrs)
+    (silta base)
     (match)
     (only (srfi :13 strings)
           string-join)
