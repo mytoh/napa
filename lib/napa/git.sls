@@ -50,6 +50,11 @@
               (cond
                 ((irregex-match (irregex "^http://.*|^git://.*") (car args))
                  (run-command `(git clone --depth 1 ,(car args))))
+		((irregex-match (irregex "[^/]*") (car args))
+                (run-command `(git clone ,(string-append "git@github.com:"
+					  		(string-trim-right (process-output->string "git config user.name"))
+"/"
+ (car args)))))
                 (else
                   (display "fetching repository from github")
                   (newline)
