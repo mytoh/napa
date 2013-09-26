@@ -82,7 +82,7 @@
         ("create"
          (github-create-new-repository (cdr args)))
         ("a"
-         (git-command `("add" "-p" ,@(cdr args))))
+         (git-command `("add" "-p" "--all" ,@(cdr args))))
         ("st"
          (git-command `("status")))
         ("ps"
